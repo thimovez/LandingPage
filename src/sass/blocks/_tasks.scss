@@ -1,0 +1,29 @@
+.tasks {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 1px;
+    }
+    &__num {
+        font-family: 'SFProDisplay';
+        font-weight: 700;
+        font-size: 200px;
+        color: #F2F2F2;
+        line-height: 239px;
+    }
+    &__descr {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        width: 420px;
+        color: #333333;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 400;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}

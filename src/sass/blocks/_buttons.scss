@@ -1,0 +1,151 @@
+.button {
+    display: block;
+    position: relative;
+    width: 221.81px;
+    height: 71px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 25px;
+    padding-right: 20px;
+    cursor: pointer;
+    background: url(../img/slider/ico-shaperight.svg) no-repeat #fff;
+    background-position: 82%;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    &__slider {
+        display: block;
+        position: absolute;
+        top: 760px;
+        left: 0;
+        border: none;
+        transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+        z-index: 1000;
+        // &:hover a {
+        //     color: #fff !important;
+        //     background-color: transparent;
+        // }
+        // &::before{
+        //     display: block;
+        //     position: absolute;
+        //     top: 0px;
+        //     right: 0px;
+        //     height: 100%;
+        //     width: 0px;
+        //     z-index: -1;
+        //     content: '';
+        //     color: #000 !important;
+        //     background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
+        //     background-color: #000;
+        //     transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
+        //     background-position: 82%;
+        // }
+        // &:hover::before {
+        //     left: 0%;
+        //     right: auto;
+        //     width: 100%;
+        // }
+    }
+    &__company {
+        margin-top: 21px;
+    }
+    &__project {
+        background: url(../img/slider/ico-shapechangecolor.svg) no-repeat #333333;
+        font-weight: 300;
+        margin-top: 30px;
+        margin-left: auto;
+        background-position: 88%;
+        a {
+            color: #fff; 
+        }
+    }
+    &__photo {
+        min-width: 100px;
+        height: 71px;
+        background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
+        color: #fff; 
+        font-weight: 300;
+        background-position: 88%;
+        position: absolute;
+        top: 67%;
+        left: 45px;
+        transform: translate(-50%, -50%);
+        transform: scale(0);
+    }
+    &__contact-us {
+        
+        padding-top: 0;
+        border: none;
+        background: url(../img/slider/ico-shapechangecolor.svg) no-repeat #333333;
+        background-position: 77%;
+        margin-top: 21px;
+        padding-right: 40px;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+.dark-animation {
+    display: block;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1000;
+        &:hover a {
+            color: #fff !important;
+            background-color: transparent;
+        }
+        &::before{
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 0px;
+            z-index: -1;
+            content: '';
+            color: #000 !important;
+            background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
+            background-color: #000;
+            transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
+            background-position: 82%;
+        }
+        &:hover::before {
+            left: 0%;
+            right: auto;
+            width: 100%;
+        }
+}
+
+.light-animation {
+    display: block;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    z-index: 1000;
+        &:hover a {
+            color: #000 !important;
+            background-color: transparent;
+        }
+        &::before{
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 0px;
+            z-index: -1;
+            content: '';
+            background: url(../img/slider/ico-shaperight.svg) no-repeat;
+            background-color: #f9f9f9;
+            transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
+            background-position: 88%;
+        }
+        &:hover::before {
+            left: 0%;
+            right: auto;
+            width: 100%;
+        }
+}

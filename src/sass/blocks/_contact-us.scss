@@ -1,0 +1,39 @@
+.contact-us {
+    padding-top: 120px;
+    padding-bottom: 142px;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input {
+            display: inline-block;
+            width: 391px;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.04em;
+            padding: 15px 0 14px 21px;
+            background: #F3F3F3;
+            border: none;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .contact-us__message {
+        padding-bottom: 115px;
+    }
+    .contact-us__politics {
+        margin-left: 40px;
+        margin-top: 22px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        color: $main-color;
+    }
+}
