@@ -1,4 +1,4 @@
-## Команды:
+## Запуск проекта для работы:
 
 Скачивание локальных npm файлов: 
 `npm i`
@@ -7,8 +7,10 @@
 `gulp`
 
 ____
-## Используемые библиотеки:
-- [Jquery](https://github.com/glidejs/glide)
-- [Slick-slider](https://github.com/glidejs/glide)
-- [wow.js](https://wowjs.uk/)
-- [animate.css](https://animate.style/)
+## Таски на данный момент:
+- Пофиксить дерганную анимацию в хедере
+- Заменить Slick-slider на Swiper
+- Пофиксить футер и блоки company, project
+- Сделать адаптацию
+- Сделать по красоте
+
