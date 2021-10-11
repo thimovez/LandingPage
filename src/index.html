@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>LandingPage</title>
+    <!-- Подключаем слайдер -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- Подключаем минифицированный файл стилей -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
+    
     
     <header class="header">
         <div class="container">
@@ -43,9 +45,9 @@
         <div class="divider"></div>
     </header>
 
-    <section class="slider hideSlider">
+    <section class="slider ">
         <div class="container">
-            <div class="slider__wrapper">
+            <div class="slider__wrapper ">
                 <div class="slider__logo">
                     <h1 class="slider__head">Project</h1>
                     <h2 class="slider__subhead">home</h2>
@@ -55,24 +57,26 @@
                         <div class="counter__num">02</div>
                     </div>
                 </div>
-                <div class="slider__right">
-                    <div class="slider__photo">
-                        <div class="slider__item">
+                <div class="slider__right swiper">
+                    <div class="slider__photo swiper-wrapper">
+                        <div class="slider__item swiper-slide">
                             <img src="img/slider/slider01.jpg" alt="slider">
                         </div>
-                        <div class="slider__item">
+                        <div class="slider__item swiper-slide">
                             <img src="img/slider/slider03.jpg" alt="slider">
                         </div>
                     </div>
                     <div class="button button__slider dark-animation"><a href="#">ВЗГЛЯНУТЬ</a></div>
                 </div>
-                <div class="slider-arrows"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
     </section>
 
-    <section class="company hideSlider">
+    <section class="company">
         <div class="container">
             <div class="company__bgc">
                 <div class="company__wrapper">
@@ -90,7 +94,8 @@
             </div>
         </div>
     </section>
-    <section class="tasks hideSlider">
+
+    <section class="tasks">
         <div class="container">
             <div class="title title_gray tasks__head">Основные задачи</div>
             <div class="tasks__main">
@@ -106,7 +111,7 @@
         </div>
     </section>
 
-    <section class="project hideSlider">
+    <section class="project">
         <div class="container">
             <div class="title title_gray project__head">Наши проекты</div>
             <div class="project__photos">
@@ -141,7 +146,7 @@
         </div>
     </section>
 
-    <section class="contact-us hideSlider">
+    <section class="contact-us">
         <div class="container">
             <div class="title title_gray contact-us__header">Связаться с нами</div>
             <div class="contact-us__info">
@@ -212,10 +217,11 @@
     <!-- подключаем jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- подключаем слайдер -->
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <!-- подключаем основной js файл -->
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
