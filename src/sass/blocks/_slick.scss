@@ -5,21 +5,7 @@
 .slick-list {
     overflow: hidden;
 }
-// .slider__photo .slick-arrow, .slick-prev {
-//     min-width: 53px;
-//     min-height: 53px;
-//     border: 1px solid #F2F2F2;
-//     background: #fff;
-//     font-size: 0;
-// }
 
-// .slider__photo .slick-arrow, .slick-next {
-//     min-width: 53px;
-//     min-height: 53px;
-//     border: 1px solid #F2F2F2;
-//     background: #fff;
-//     font-size: 2px;
-// }
 .slider__photo {
     width: 770px;
     height: 829px;
@@ -36,7 +22,7 @@
     z-index: 10;
 }
 
-.slick-arrow.slick-prev {
+.swiper-button-prev {
     left: -400px;
     top: 551px;
     font-size: 0;
@@ -51,7 +37,7 @@
     }
 }
 
-.slick-arrow.slick-next {
+.swiper-button-next {
     position: absolute;
     left: 78px;
     top: 0;
@@ -60,7 +46,7 @@
     min-height: 53px;
     border: 1px solid #F2F2F2;
     background: #fff;
-    background: url(../img/slider/ico-shaperight.svg) center no-repeat;
+    background: url(../img/slider/ico-shaperight.svg) center no-repeat !important;
     &:hover {
         cursor: pointer;
         background-color: #F9F9F9;
