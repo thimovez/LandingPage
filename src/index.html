@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>LandingPage</title>
     <!-- Подключаем слайдер -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
@@ -21,36 +21,42 @@
                 <a class="logo" href="#">
                     <img src="img/header/logo.png" alt="logo">
                 </a>
-                <div class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="index.html">ГЛАВНАЯ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">ГАЛЕРЕЯ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">ПРОЕКТЫ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">СЕРТИФИКАТЫ</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">КОНТАКТЫ</a>
-                        </li>
-                    </ul>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html">ГЛАВНАЯ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ГАЛЕРЕЯ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">ПРОЕКТЫ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">СЕРТИФИКАТЫ</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="divider"></div>
     </header>
 
-    <section class="slider ">
+     <section class="slider ">
         <div class="container">
             <div class="slider__wrapper ">
                 <div class="slider__logo">
-                    <h1 class="slider__head">Project</h1>
-                    <h2 class="slider__subhead">home</h2>
+                    <div class="slider__head">
+                        <h1 class="slider__head-name">Project</h1>
+                        <h2 class="slider__head-subname">home</h2>
+                    </div>
                     <div class="counter">
                         <div class="counter__num">01</div>
                         <div class="oblique-divider"></div>
@@ -68,27 +74,33 @@
                     </div>
                     <div class="button button__slider dark-animation"><a href="#">ВЗГЛЯНУТЬ</a></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper__button">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div> 
             </div>
         </div>
 
     </section>
 
-    <section class="company">
+     <section class="company">
         <div class="container">
             <div class="company__bgc">
                 <div class="company__wrapper">
-                    <img class="one" src="img/company/company01.jpg" alt="company">
-                    <img class="two" src="img/company/company03.jpg" alt="company">
-                    <img class="tree" src="img/company/company02.jpg" alt="company">
+                    <div class="company__image">
+                        <img class="one" src="img/company/company01.jpg" alt="company">
+                        <img class="two" src="img/company/company03.jpg" alt="company">
+                        <img class="tree" src="img/company/company02.jpg" alt="company">
+                    </div>
 
                     <div class="company__info">
-                        <div class="title title_gray company__head">О компании</div>
-                        <div class="company__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                        <div class="company__head head">О компании</div>
+                        <div class="company__description description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
                             specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
-                        <div class="button button__company dark-animation"><a href="">Читать</a></div>
+                        <div class="button button__company dark-animation">
+                            <a href="">Читать</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -97,7 +109,7 @@
 
     <section class="tasks">
         <div class="container">
-            <div class="title title_gray tasks__head">Основные задачи</div>
+            <div class="tasks__head head">Основные задачи</div>
             <div class="tasks__main">
                 <div class="tasks__wrapper animate__animated animate__bounceInRight wow">
                     <div class="tasks__num">1</div>
@@ -111,7 +123,7 @@
         </div>
     </section>
 
-    <section class="project">
+     <section class="project">
         <div class="container">
             <div class="title title_gray project__head">Наши проекты</div>
             <div class="project__photos">
@@ -146,7 +158,7 @@
         </div>
     </section>
 
-    <section class="contact-us">
+    <!--<section class="contact-us">
         <div class="container">
             <div class="title title_gray contact-us__header">Связаться с нами</div>
             <div class="contact-us__info">
@@ -212,7 +224,7 @@
         <div class="divider__footer"></div>
         <div class="footer__rights">© 2019 Digital Project. Все права защищены.</div>
 
-    </footer>
+    </footer> -->
 
     <!-- подключаем jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

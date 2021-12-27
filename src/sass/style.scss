@@ -1,7 +1,45 @@
+@import './utils/all';
+
 //*****Import default values//*****
 @import 'base/all';
-
 
 //*****Import site element//*****
 @import 'blocks/all';
 
+//zeroing values
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-fonts;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

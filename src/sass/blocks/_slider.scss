@@ -1,57 +1,95 @@
-.slider {
-    
-    &__photo {
-        margin-top: 2px;
-        
-    }
+// .slider {
+
+//     &__photo {
+//         margin-top: 2px;
+
+//     }
+//     &__head {
+//         color: #BDBDBD;
+//         font-weight: 300;
+//         font-size: 64px;
+//         line-height: 64px;
+//         text-transform: uppercase;
+//     }
+//     &__subhead {
+//         color: #333333;
+//         font-weight: 700;
+//         font-size: 64px;
+//         line-height: 64px;
+//         text-transform: uppercase;
+//     }
+//     &__wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//         position: relative;
+//     }
+//     &__logo {
+//         display: inline-block;
+//         margin-top: 335px;
+//     }
+//     &__right {
+//         position: relative;
+//     }
+// }
+
+// .counter {
+//     position: relative;
+//     display: flex;
+//     justify-content: space-between;
+//     width: 140px;
+//     margin-top: 220px;
+//     &__num {
+//         color: #BDBDBD;
+//         font-size: 24px;
+//         line-height: 24px;
+//     }
+// }
+
+// .oblique-divider {
+//     position: absolute;
+//     transform: rotate(-45deg);
+//     width: 44px;
+//     border-top: 2px solid #E0E0E0;
+//     top: 13px;
+//     right: 48px;
+// }
+
+@media screen and (min-width: $mobile) {
+  .slider {
     &__head {
-        color: #BDBDBD;
+      padding: 20px 0;
+      &-name {
+        font-family: TT Hoves;
         font-weight: 300;
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 40px;
+        color: $secondary-color;
+        text-align: center;
         text-transform: uppercase;
-    }
-    &__subhead {
-        color: #333333;
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 64px;
+      }
+      &-subname {
+        font-family: TT Hoves;
+        font-weight: bold;
+        font-size: 40px;
+        color: $main-color;
+        text-align: center;
         text-transform: uppercase;
+      }
     }
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        position: relative;
+  }
+  .counter {
+    display: none;
+  }
+  .swiper {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    &__button {
+      display: none;
     }
-    &__logo {
-        display: inline-block;
-        margin-top: 335px;
+  }
+  .swiper-slide {
+    img {
+      width: 100%;
     }
-    &__right {
-        position: relative;
-    }
+  }
 }
-
-
-.counter {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
-    margin-top: 220px;
-    &__num {
-        color: #BDBDBD;
-        font-size: 24px;
-        line-height: 24px;
-    }
-}
-
-.oblique-divider {
-    position: absolute;
-    transform: rotate(-45deg);
-    width: 44px;
-    border-top: 2px solid #E0E0E0;
-    top: 13px;
-    right: 48px;
-}
-
