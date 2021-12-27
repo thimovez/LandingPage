@@ -125,32 +125,16 @@
 
      <section class="project">
         <div class="container">
-            <div class="title title_gray project__head">Наши проекты</div>
-            <div class="project__photos">
-                <div class="box-img">
-                    <a href="#">
-                        <img class="top" src="img/project/project01.jpg" alt="photo">
-                        <div class="background-gray"></div>
-                        <div class="box-img__content">
-                            <div class="text">Досуговый центр</div>
-                            <div class="button button__photo ">Подробнее</div>
-                        </div>
-                    </a>
+            <div class="project__head head">Наши проекты</div>
+            <div class="project__image">
+                <div class="project__image-block">
+                    <img src="" alt="">
                 </div>
-                <div class="box-img">
-                    <a href="#">
-                        <img class="top" src="img/project/project.jpg" alt="photo">
-                        <div class="background-gray"></div>
-                        <div class="box-img__content">
-                            <div class="text">Досуговый центр</div>
-                            <div class="button button__photo">Подробнее</div>
-                        </div>
-                    </a>
+                <div class="project__image-block">
+                    <img src="" alt="">
                 </div>
-                <div class="box-img__wrapper">
-                    <span class="box-img__first"></span>
-                    <span class="box-img__second"></span>
-                    <span class="box-img__third"></span>
+                <div class="project__image-block">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="button button__project light-animation"><a href="#">Все проекты</a></div>
@@ -158,17 +142,22 @@
         </div>
     </section>
 
-    <!--<section class="contact-us">
+    <section class="contact-us">
         <div class="container">
-            <div class="title title_gray contact-us__header">Связаться с нами</div>
+            <div class="contact-us__header head">Связаться с нами</div>
             <div class="contact-us__info">
                 <div class="contact-us__wrapper">
-                    <input required class="contact-us__name" type="text" name="name" placeholder="Имя">
-                    <input required class="contact-us__phone" type="text" name="phone" placeholder="Номер телефона">
-                    <input required class="contact-us__email" type="text" name="email" placeholder="E-mail">
-                    <input class="contact-us__product" type="text" name="product" placeholder="Интересующий товар/услуга">
-                    <input class="contact-us__message" type="text" name="message" placeholder="Сообщение">
-                    <div class="contact-us__politics">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</div>
+                    <form>
+                        <input required class="contact-us__name contact-us__input" type="text" name="name" placeholder="Имя">
+                        <input required class="contact-us__phone contact-us__input" type="text" name="phone" placeholder="Номер телефона">
+                        <input required class="contact-us__email contact-us__input" type="text" name="email" placeholder="E-mail">
+                        <input class="contact-us__product contact-us__input" type="text" name="product" placeholder="Интересующий товар/услуга">
+                        <input class="contact-us__message contact-us__input" type="text" name="message" placeholder="Сообщение">
+                    </form>
+                    <div class="politics">
+                        <input type="checkbox">
+                        <div class="politics__text">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</div>
+                    </div>
                     <button class="button button__contact-us light-animation"><a href="#">Отправить</a></button>
                 </div>
                 <div class="contact-us__photo">
@@ -182,10 +171,10 @@
         <div class="container">
 
             <div class="footer__content">
-                <div class="logo logo__footer"><img src="img/footer/footerlogo.png" alt="logo"></div>
+                <div class="logo logo__footer footer__logo"><img src="img/footer/footerlogo.png" alt="logo"></div>
                 <div class="footer__wrapper">
                     <div class="footer__header">Информация</div>
-                    <ul class="footer__ul">
+                    <ul class="footer__ul footer__info">
                         <li><a href="index.html">Главная</a></li>
                         <li><a href="error.html">Галерея</a></li>
                         <li><a href="error.html">Проекты</a></li>
@@ -193,7 +182,7 @@
                         <li><a href="error.html">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="footer__wrapper footer__contacts">
+                 <div class="footer__wrapper footer__contacts">
                     <div class="footer__header">Контакты</div>
                     <ul class="footer__ul">
                         <li> <img src="img/footer/placeholder.svg" alt="minlogo"> <a target="_blank" href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+10,+%D0%9A%D0%B0%D1%80%D0%B0%D0%B3%D0%B0%D0%BD%D0%B4%D0%B0+100000,+%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD/@49.8239574,73.0834136,17z/data=!3m1!4b1!4m5!3m4!1s0x424346c3b32ffcaf:0x41481e634d919f9e!8m2!3d49.823954!4d73.0856023?hl=ru">100000, Республика  Казахстан, <br>г. Караганда, ул. Телевизионная 10</a></li>
@@ -203,7 +192,7 @@
                 </div>
                 <div class="footer__wrapper">
                     <div class="footer__header">Социальные сети</div>
-                    <ul class="footer__ul footer__social">
+                   <!-- <ul class="footer__ul footer__social">
                         <li>
                             <a target="_blank" href="https://www.facebook.com/"><img src="img/footer/facebook.svg" alt="facebook"></a>
                         </li>
@@ -217,14 +206,14 @@
                             <a target="_blank" href="https://www.pinterest.ru/"><img src="img/footer/pinterest.svg" alt="pinterest"></a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
 
         <div class="divider__footer"></div>
         <div class="footer__rights">© 2019 Digital Project. Все права защищены.</div>
 
-    </footer> -->
+    </footer>
 
     <!-- подключаем jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

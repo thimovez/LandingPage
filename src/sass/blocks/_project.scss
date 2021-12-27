@@ -103,5 +103,8 @@
 
 @media screen and (min-width: $mobile) {
   .project {
+    &__head {
+      text-align: center;
+    }
   }
 }

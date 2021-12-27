@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "homepage": "https://thimovez.github.io/landingpage",
+  "homepage": "https://thimovez.github.io/LandingPage",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
