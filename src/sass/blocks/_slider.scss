@@ -1,58 +1,3 @@
-// .slider {
-//     &__photo {
-//         margin-top: 2px;
-
-//     }
-//     &__head {
-//         color: #BDBDBD;
-//         font-weight: 300;
-//         font-size: 64px;
-//         line-height: 64px;
-//         text-transform: uppercase;
-//     }
-//     &__subhead {
-//         color: #333333;
-//         font-weight: 700;
-//         font-size: 64px;
-//         line-height: 64px;
-//         text-transform: uppercase;
-//     }
-//     &__wrapper {
-//         display: flex;
-//         justify-content: space-between;
-//         position: relative;
-//     }
-//     &__logo {
-//         display: inline-block;
-//         margin-top: 335px;
-//     }
-//     &__right {
-//         position: relative;
-//     }
-// }
-
-// .counter {
-//     position: relative;
-//     display: flex;
-//     justify-content: space-between;
-//     width: 140px;
-//     margin-top: 220px;
-//     &__num {
-//         color: #BDBDBD;
-//         font-size: 24px;
-//         line-height: 24px;
-//     }
-// }
-
-// .oblique-divider {
-//     position: absolute;
-//     transform: rotate(-45deg);
-//     width: 44px;
-//     border-top: 2px solid #E0E0E0;
-//     top: 13px;
-//     right: 48px;
-// }
-
 @media screen and (min-width: $mobile) {
   .slider {
     &__head {
@@ -107,7 +52,7 @@
   }
   .swiper {
     height: 600px;
-    width: 100%;
+    width: 500px;
     overflow: hidden;
     &__button {
       display: none;
@@ -126,6 +71,14 @@
         text-align: start;
         font-size: 60px;
       }
+    }
+    &__line {
+      position: absolute;
+      height: 1px;
+      width: 194px;
+      background-color: $secondary-color;
+      left: 140px;
+      top: 66%;
     }
     &__wrapper {
       display: flex;
@@ -210,6 +163,10 @@
       left: 0;
       transform: translate(50%, 50%);
     }
+    &:hover {
+      background: $thirdy-color;
+      transition: 0.3s;
+    }
   }
   .button__slider {
     top: 529px;
@@ -223,5 +180,21 @@
   }
   .button__slider {
     top: 760px;
+  }
+  .slider {
+    &__logo {
+      transform: translateX(0);
+    }
+    &__line {
+      position: absolute;
+      height: 1px;
+      width: 300px;
+      background-color: $secondary-color;
+      left: 140px;
+      top: 50%;
+    }
+  }
+  .swiper__button {
+    position: relative;
   }
 }
