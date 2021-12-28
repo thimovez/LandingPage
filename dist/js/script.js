@@ -16,7 +16,7 @@ new Swiper('.swiper', {
 
 new WOW().init();
 
-
+//burger menu
 const burger = document.querySelector('.header__burger');
 const menuBurger = document.querySelector('.menu');
 
@@ -25,6 +25,13 @@ burger.addEventListener('click', () => {
   burger.classList.toggle('active');
 });
 
-// closeElem.addEventListener('click', () => {
-//   menu.classList.remove('active');
-// });
+
+// footer menu 
+const footerButton = document.querySelectorAll('.footer__header');
+const footerMenu = document.querySelectorAll('.footer__ul');
+console.log(footerButton);
+
+footerButton.addEventListener('click', () => {
+  footerMenu.classList.toggle('active');
+  footerButton.classList.toggle('active');
+});
