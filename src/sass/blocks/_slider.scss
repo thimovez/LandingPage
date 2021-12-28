@@ -187,6 +187,10 @@
       left: 0;
       transform: translate(50%, 50%);
     }
+    &:hover {
+      background: $thirdy-color;
+      transition: 0.3s;
+    }
   }
   .swiper-button-prev {
     position: relative;
@@ -206,5 +210,18 @@
       left: 0;
       transform: translate(50%, 50%);
     }
+  }
+  .button__slider {
+    top: 529px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .swiper {
+    width: 770px;
+    height: 829px;
+  }
+  .button__slider {
+    top: 760px;
   }
 }
