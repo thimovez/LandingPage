@@ -1,69 +1,64 @@
 .button {
-  display: block;
-  position: relative;
   width: 221.81px;
   height: 71px;
+  background: url(../img/slider/ico-shaperight.svg) no-repeat #fff;
+  background-position: 82%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 25px;
-  padding-right: 20px;
+  padding: 20px;
   cursor: pointer;
-  background: url(../img/slider/ico-shaperight.svg) no-repeat #fff;
-  background-position: 82%;
   a {
     text-decoration: none;
     color: #000;
   }
-  &__slider {
+  &:hover {
+    color: #fff !important;
+  }
+  &::before {
+    content: '';
     display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    color: #000 !important;
+    background-color: #000;
+    transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  &:hover::before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
+  &::after {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
+    background-position: 82%;
+    transition: 0.5s;
+    content: '';
+  }
+  &:hover::after {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+    transition: 1.3s;
+  }
+  &__slider {
     position: absolute;
     top: 760px;
     left: 0;
     border: none;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-    z-index: 1000;
-    &:hover a {
-      color: #fff !important;
-      background-color: transparent;
-    }
-    &::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      height: 100%;
-      width: 0px;
-      z-index: -1;
-      color: #000 !important;
-      background-color: #000;
-      transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
-    }
-    &:hover::before {
-      left: 0%;
-      right: auto;
-      width: 100%;
-    }
-    &::after {
-      display: block;
-      position: absolute;
-      left: 0px;
-      top: -1px;
-      height: 0px;
-      width: 100%;
-      z-index: -1;
-      background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
-      background-position: 82%;
-      transition: 0.5s;
-      content: '';
-    }
-    &:hover::after {
-      bottom: 0%;
-      top: auto;
-      height: 100%;
-      transition: 0.5s;
-    }
+    z-index: 999999;
   }
   &__company {
     margin-top: 21px;
@@ -135,32 +130,32 @@
   }
 }
 
-.light-animation {
-  display: block;
-  border: none;
-  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-  z-index: 1000;
-  &:hover a {
-    color: #000 !important;
-    background-color: transparent;
-  }
-  &::before {
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 0px;
-    z-index: -1;
-    content: '';
-    background: url(../img/slider/ico-shaperight.svg) no-repeat;
-    background-color: #f9f9f9;
-    transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
-    background-position: 88%;
-  }
-  &:hover::before {
-    left: 0%;
-    right: auto;
-    width: 100%;
-  }
-}
+// .light-animation {
+//   display: block;
+//   border: none;
+//   transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+//   z-index: 1000;
+//   &:hover a {
+//     color: #000 !important;
+//     background-color: transparent;
+//   }
+//   &::before {
+//     display: block;
+//     position: absolute;
+//     top: 0px;
+//     right: 0px;
+//     height: 100%;
+//     width: 0px;
+//     z-index: -1;
+//     content: '';
+//     background: url(../img/slider/ico-shaperight.svg) no-repeat;
+//     background-color: #f9f9f9;
+//     transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
+//     background-position: 88%;
+//   }
+//   &:hover::before {
+//     left: 0%;
+//     right: auto;
+//     width: 100%;
+//   }
+// }

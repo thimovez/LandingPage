@@ -151,13 +151,35 @@
       a {
         text-decoration: none;
         color: $main-color;
-        &:hover {
-          cursor: pointer;
-          padding-top: 4px;
-          padding-bottom: 4px;
-          border-top: 1px solid $main-color;
-          border-bottom: 1px solid $main-color;
+        position: relative;
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background-color: $main-color;
+          opacity: 0;
+        }
+        &::after {
+          transform: translateY(10px);
+          left: 0;
+          transition: all 0.5s ease;
+        }
+        &::before {
+          transform: translateY(0);
+          left: 0;
+          transition: all 0.5s ease;
+        }
+        &:hover::after {
+          transform: translateY(15px);
           transition: 0.6s;
+          opacity: 1;
+        }
+        &:hover::before {
+          transform: translateY(-4px);
+          transition: 0.6s;
+          opacity: 1;
         }
       }
     }

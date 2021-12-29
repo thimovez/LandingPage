@@ -6,6 +6,11 @@
     }
     &__photo {
       display: none;
+      img {
+        width: 749px;
+        height: 369px;
+        object-fit: cover;
+      }
     }
     &__wrapper {
       display: flex;
