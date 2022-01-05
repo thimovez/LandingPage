@@ -35,12 +35,36 @@
   }
 }
 
+@media screen and (min-width: $big-mobile) {
+  .company {
+    &__head {
+      margin: 0 0 20px 0;
+    }
+    &__description {
+      width: 300px;
+      text-align: start;
+      display: block;
+      margin: 0 auto;
+      padding: 0 0 10px 0;
+    }
+    .button__company {
+      display: block;
+      margin: auto;
+    }
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .company {
-    margin-top: 40px;
-    &__button {
-      margin: 15px auto;
+    margin: 40px 0 0 0;
+    &__description {
+      width: 450px;
+      padding: 0 0 20px 0;
     }
+  }
+  .button__company {
+    display: block;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -55,7 +79,7 @@
       position: relative;
     }
     &__bgc {
-      padding: 10px 0;
+      padding: 25px 0;
       background-color: $bgc;
     }
     &__info {

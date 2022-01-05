@@ -39,6 +39,17 @@
   }
 }
 
+@media screen and (min-width: $big-mobile) {
+  .swiper {
+    height: 500px;
+    width: 450px;
+    overflow: hidden;
+    &__button {
+      display: none;
+    }
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .slider {
     &__head {

@@ -70,6 +70,7 @@
 @media screen and (min-width: $desktop) {
   .project {
     &__head {
+      font-family: $main-fonts;
       text-align: start;
       margin: 0 0 60px 0;
     }
