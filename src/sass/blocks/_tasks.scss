@@ -18,7 +18,7 @@
       color: #f2f2f2;
     }
     &__descr {
-      font-family: TT Hoves;
+      font-family: $main-fonts;
       font-size: 19px;
       color: $main-color;
     }
@@ -29,7 +29,7 @@
   .tasks {
     padding: 100px 0;
     &__head {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 300;
       font-size: 50px;
       line-height: 30px;
@@ -43,7 +43,7 @@
       margin-bottom: 1px;
     }
     &__num {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 700;
       font-size: 200px;
       color: #f2f2f2;
@@ -71,7 +71,7 @@
   .tasks {
     padding: 100px 0;
     &__head {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 300;
       font-size: 64px;
       line-height: 64px;
@@ -85,7 +85,7 @@
       margin-bottom: 1px;
     }
     &__num {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 700;
       font-size: 200px;
       color: #f2f2f2;
@@ -112,7 +112,7 @@
   .tasks {
     padding: 100px 0;
     &__head {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 300;
       font-size: 64px;
       line-height: 64px;
@@ -126,7 +126,7 @@
       margin-bottom: 1px;
     }
     &__num {
-      font-family: TTHoves;
+      font-family: $main-fonts;
       font-weight: 700;
       font-size: 200px;
       color: #f2f2f2;

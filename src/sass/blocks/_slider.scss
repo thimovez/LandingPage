@@ -3,7 +3,7 @@
     &__head {
       padding: 20px 0;
       &-name {
-        font-family: TTHoves;
+        font-family: $main-fonts;
         font-weight: 300;
         font-size: 40px;
         color: $secondary-color;
@@ -11,7 +11,7 @@
         text-transform: uppercase;
       }
       &-subname {
-        font-family: TTHoves;
+        font-family: $main-fonts;
         font-weight: bold;
         font-size: 40px;
         color: $main-color;
