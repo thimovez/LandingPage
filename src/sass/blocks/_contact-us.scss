@@ -39,6 +39,26 @@
   }
 }
 
+@media screen and (min-width: $tablet) {
+  .contact-us {
+    &__wrapper {
+      display: block;
+      margin: 20px auto 0;
+      width: 70%; 
+    }
+  }
+}
+
+@media screen and (min-width: $minidesktop) {
+  .contact-us {
+    &__wrapper {
+      display: block;
+      margin: 20px auto 0;
+      width: 60%; 
+    }
+  }
+}
+
 @media screen and (min-width: $desktop) {
   .contact-us {
     padding-top: 120px;
