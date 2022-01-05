@@ -9,6 +9,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     &__image {
       display: grid;
       grid-template: repeat(2, 150px) / repeat(1, 100%);
@@ -74,6 +75,22 @@
       text-align: start;
       margin: 0 0 60px 0;
     }
+    &__photo {
+      &-one {
+      }
+      &-two {
+        &:hover {
+          background: url('../img/project/project07.jpg');
+        }
+      }
+      &-three {
+        width: 100%;
+        height: 100%;
+        &:hover {
+          background: url('../img/project/project08.jpg') no-repeat;
+        }
+      }
+    }
     &__image {
       display: grid;
       grid-template: repeat(2, 280px) / repeat(4, 270px);
@@ -81,10 +98,13 @@
       gap: 30px;
       &-block {
         display: block;
-        background-color: violet;
         &.horizontal-left {
           grid-row: 1;
           grid-column: 1/3;
+          &:hover {
+            background: url('../img/project/project06.jpg');
+            transition: 0.3s;
+          }
         }
         &.horizontal-right {
           grid-row: 1;

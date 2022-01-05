@@ -113,7 +113,10 @@
     &__photo {
       width: 221.81px;
       height: 71px;
-      padding: 20px;
+      position: absolute;
+      top: 63%;
+      left: 3.5%;
+      padding: 27px;
       color: white;
       text-align: center;
       text-transform: uppercase;
@@ -236,22 +239,5 @@
         transition: all 0.6s cubic-bezier(0.42, 0, 0.58, 1);
       }
     }
-    &__photo {
-      width: 221.81px;
-      position: absolute;
-      top: 63%;
-      left: 6%;
-      color: white;
-      background: url(../img/slider/ico-shapechangecolor.svg) no-repeat;
-      background-position: 90%;
-    }
-  }
-
-  .head {
-    font-family: $main-fonts;
-    color: $secondary-color;
-    font-weight: 300;
-    font-size: 64px;
-    line-height: 64px;
   }
 }
