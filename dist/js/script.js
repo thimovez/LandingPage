@@ -38,11 +38,16 @@ burger.addEventListener('click', () => {
 
 
 // footer menu  phone
-// const footerButton = document.querySelectorAll('.footer__header');
-// const footerMenu = document.querySelectorAll('.footer__ul');
-// console.log(footerButton);
+let footerButton = document.querySelectorAll('.footer__header');
+let footerMenu = document.querySelectorAll('.footer__ul');
 
-// footerButton.addEventListener('click', () => {
-//   footerMenu.classList.toggle('active');
-//   footerButton.classList.toggle('active');
-// });
+function show(){
+  footerButton.forEach(el => 
+    el.addEventListener('click', function() {
+      footerButton.forEach(item => item.classList.toggle('active'));
+      footerMenu.forEach(item => item.classList.toggle('active'));
+    })
+  );
+}
+
+show();

@@ -3,6 +3,21 @@
     display: flex;
     flex-direction: column;
     background-color: $main-color;
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__cont {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
     &__logo {
       img {
         display: block;
@@ -162,5 +177,4 @@
       padding: 24px 0 24px 0;
     }
   }
-  
 }

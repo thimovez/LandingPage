@@ -28,7 +28,7 @@
   .project {
     &__image {
       display: grid;
-      grid-template: repeat(3, 165px)/repeat(2, 250px);
+      grid-template: repeat(3, 165px) / repeat(2, 250px);
       gap: 15px;
       justify-content: center;
     }
@@ -39,7 +39,7 @@
   .project {
     &__image {
       display: grid;
-      grid-template: repeat(3, 165px)/repeat(2,300px);
+      grid-template: repeat(3, 165px) / repeat(2, 300px);
       gap: 15px;
       justify-content: center;
       &-block {
@@ -103,12 +103,24 @@
       margin: 0 0 60px 0;
     }
     &__photo-one {
+      transition: 0.5s;
+      background: url('../../img/project/project03.jpg') no-repeat center / cover;
+      &:hover {
+        background: url('../../img/project/project06.jpg') no-repeat center / cover;
+      }
       &-three {
         width: 100%;
         height: 100%;
         &:hover {
           background: url('../img/project/project08.jpg') no-repeat;
         }
+      }
+    }
+    &__photo-two {
+      transition: 0.5s;
+      background: url('../../img/project/project04.jpg') no-repeat center / cover;
+      &:hover {
+        background: url('../../img/project/project07.jpg') no-repeat center / cover;
       }
     }
     &__image {
@@ -189,11 +201,6 @@
       top: 48px;
       left: 79px;
       transition: 0.8s;
-    }
-  }
-  .project__photo-one {
-    &:hover {
-      background: url('../../img/project/project06.jpg');
     }
   }
 }
