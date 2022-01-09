@@ -11,17 +11,21 @@ new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-    clickable: true,
-    dynamicBullets: true,
-    //Custom bullets
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+    // Custom fraction
+    formatFractionCurrent: function (number) {
+      return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+      return ('0' + number).slice(-2);
+    },
+    renderFraction: function (currentClass, totalClass) {
+      return '<span class="'+ currentClass + '"></span>' + 
+      '<div class="oblique-divider"></div>' + 
+      '<span class="' + totalClass + '"></span>';
     },
   },
 });
 
-
-new WOW().init();
 
 //burger menu for phone
 const burger = document.querySelector('.header__burger');
@@ -34,11 +38,11 @@ burger.addEventListener('click', () => {
 
 
 // footer menu  phone
-const footerButton = document.querySelectorAll('.footer__header');
-const footerMenu = document.querySelectorAll('.footer__ul');
-console.log(footerButton);
+// const footerButton = document.querySelectorAll('.footer__header');
+// const footerMenu = document.querySelectorAll('.footer__ul');
+// console.log(footerButton);
 
-footerButton.addEventListener('click', () => {
-  footerMenu.classList.toggle('active');
-  footerButton.classList.toggle('active');
-});
+// footerButton.addEventListener('click', () => {
+//   footerMenu.classList.toggle('active');
+//   footerButton.classList.toggle('active');
+// });

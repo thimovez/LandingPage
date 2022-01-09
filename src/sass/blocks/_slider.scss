@@ -192,6 +192,7 @@
     top: 760px;
   }
   .slider {
+    position: relative;
     &__logo {
       transform: translateX(0);
     }
@@ -206,5 +207,23 @@
   }
   .swiper__button {
     position: relative;
+  }
+  .swiper-pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    position: static;
+    font-family: $main-fonts;
+    font-size: 24px;
+    line-height: 24px;
+    color: #bdbdbd;
+    text-align: start;
+    margin: 90px 0 0 8px;
+    // &-current {
+    //   margin-right: 25px;
+    // }
+    // &-total {
+    //   margin-left: 25px;
+    // }
   }
 }
