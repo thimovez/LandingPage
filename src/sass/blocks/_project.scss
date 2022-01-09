@@ -1,12 +1,15 @@
 @media screen and (min-width: $mobile) {
   .project {
     &__photo-one {
-      background: url('../../img/project/project03.jpg') no-repeat center / cover;
+      background: url('../img/project/project03.jpg') no-repeat center / cover;
     }
     &__photo-two {
-      background: url('../../img/project/project04.jpg') no-repeat center / cover;
+      background: url('../img/project/project04.jpg') no-repeat center / cover;
     }
-    s &__head {
+    &__photo-three {
+      background: url('../img/project/project05.jpg') no-repeat center / cover;
+    }
+    &__head {
       text-align: center;
       margin-bottom: 30px;
     }
@@ -110,9 +113,9 @@
     }
     &__photo-one {
       transition: 0.5s;
-      background: url('../../img/project/project03.jpg') no-repeat center / cover;
+      background: url('../img/project/project03.jpg') no-repeat center / cover;
       &:hover {
-        background: url('../../img/project/project06.jpg') no-repeat center / cover;
+        background: url('../img/project/project06.jpg') no-repeat center / cover;
       }
       &-three {
         width: 100%;
@@ -124,9 +127,16 @@
     }
     &__photo-two {
       transition: 0.5s;
-      background: url('../../img/project/project04.jpg') no-repeat center / cover;
+      background: url('../img/project/project04.jpg') no-repeat center / cover;
       &:hover {
-        background: url('../../img/project/project07.jpg') no-repeat center / cover;
+        background: url('../img/project/project07.jpg') no-repeat center / cover;
+      }
+    }
+    &__photo-three {
+      transition: 0.5s;
+      background: url('../img/project/project05.jpg') no-repeat center / cover;
+      &:hover {
+        background: url('../img/project/project08.jpg') no-repeat center / cover;
       }
     }
     &__image {
