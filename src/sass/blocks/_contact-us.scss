@@ -125,8 +125,7 @@
         opacity: 1;
       }
       &:checked {
-        background: $bgc;
-        // background-image: url('../img/contactus/arrows.svg');
+        background: url('../img/contactus/arrows.svg') no-repeat center;
       }
     }
     &__text {
