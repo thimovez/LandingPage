@@ -3,6 +3,13 @@
     display: flex;
     flex-direction: column;
     background-color: $main-color;
+    &__wrapper {
+      &.active {
+        .footer__ul {
+          display: block;
+        }
+      }
+    }
     &__social {
       display: flex;
       justify-content: space-between;
@@ -71,9 +78,6 @@
         color: white;
         list-style-type: none;
         text-decoration: none;
-      }
-      &.active {
-        display: block;
       }
     }
     &__rights {
