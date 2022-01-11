@@ -37,48 +37,11 @@ burger.addEventListener('click', () => {
 });
 
 
-// Footer menu phone
-// let footerButton = document.querySelectorAll('.footer__header');
-// let footerMenu = document.querySelector('.footer__ul');
+//Footer accordion
+const accordion = document.getElementsByClassName('footer__wrapper');
 
-// footerButton.forEach(accordionItem => {
-//   accordionItem.footerMenu.addEventListener('click', (e) => {
-//     accordionItem.classList.toggle('active');
-//   });
-
-// });
-
-
-
-// function show() {
-//   footerButton.forEach(el =>
-//     el.addEventListener('click', function () {
-//       footerButton.forEach(item => item.classList.toggle('active'));
-//       footerMenu.forEach(item => item.classList.toggle('active'));
-//     })
-//   );
-// }
-
-// show();
-
-
-
-// const accordion_items_elms = document.querySelectorAll('.accordion .accordion__item');
-
-// accordion_items_elms.forEach(accordionItem => {
-
-//   accordionItem.querySelector('.accordion__item__head').addEventListener('click', (e) => {
-//     accordionItem.classList.toggle('active');
-//   });
-
-// });
-
-const footerUl = document.querySelectorAll('.footer__ul');
-
-footerUl.forEach(accordionItem => {
-
-  accordionItem.querySelector('.footer__header').addEventListener('click', (e) => {
-    accordionItem.classList.toggle('active');
+for (let i = 0; i < accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active');
   });
-
-});
+}
